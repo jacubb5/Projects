@@ -67,4 +67,5 @@ Creating and maintaining a complete bill of materials was another major learning
 Finally, rapid prototyping and 3D printing allowed me to test assumptions early and cheaply. By printing and fitting parts before finalizing the design, I learned how tolerances, material stiffness, and assembly constraints affect real-world performance. This iterative approach reduced risk and helped me converge on a design that balances strength, weight, and ease of assembly.
 
 ========== Summary ==========
+
 The HPRC tracking gimbal is a multidisciplinary robotics system combining mechanical design, motor control, sensing, and real-time tracking under environmental uncertainty. It is designed to be lightweight, portable, and robust enough to autonomously track a rocket traveling tens of thousands of feet into the air. The project has provided hands-on experience with the same challenges faced in real robotic platforms: dynamic loads, feedback control, modularity, and system integration.
