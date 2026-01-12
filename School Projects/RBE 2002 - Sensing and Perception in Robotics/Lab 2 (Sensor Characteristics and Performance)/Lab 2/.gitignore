@@ -1,0 +1,4 @@
+.vscode
+.pio
+# lib/Chassis/src/chassis-params.h
+# lib/Romi32U4Motors/src/Romi32U4MotorParameters.h
