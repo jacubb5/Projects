@@ -1,1 +1,3 @@
-# Project-1-Starter-Code
+========== Week One ==========
+
+In this weeks lab, we focused on learning how to use Platformio and Romi pinouts. This was the first robotics course that heavily relied on Github, and we spent time setting that up as well. We used Teleplot to visualize data and tune our drive motors to use PI control. We learned encoder functionality using oscilloscopes and measured wheel dimensions to estimate distance per encoder tick. Analog reflectance sensors were used as line sensors to follow lines within a grid. The first lab was driving to an intersection in the grid of lines and then returning. We learned how to make a basic state machine that utilizes checkers and handlers for determining and reacting to events. This allows us to create a real time system that can check for and run multiple tasks simultaneously.

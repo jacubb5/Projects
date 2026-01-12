@@ -1,1 +1,3 @@
-# Project-1-Starter-Code
+========== Week Four ==========
+
+In this week, we started using the built in IMU with an accelerometer and gyroscope for navigation. This would be used with a complimentary filter to get smooth and accurate data outputs. It was used to measure pitch angle to detect when its on a ramp or on flat ground. It was also used to detect if it’s aligned with gravity such that its going up the ramp at its steepest point at all times. In the lab, it had to drive up a ramp and stop once it reaches flat ground.

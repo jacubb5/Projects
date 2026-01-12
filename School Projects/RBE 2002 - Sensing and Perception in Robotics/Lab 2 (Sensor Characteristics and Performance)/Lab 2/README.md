@@ -1,1 +1,3 @@
-# Project-1-Starter-Code
+========== Week Two ==========
+
+This weeks lab focused on utilizing an IR distance and ultrasonic distance sensor. This is where we started to utilize documentation heavily and learn sensor data filtering and calibration. By collecting samples at incrementing distances, we were able to create a curve/equation for sensor data return and actual distance. We learned how to test sensor filtering. We used running averages, windowed averages, weighted averages, and median filters. We also learned to use hysteresis with a Schmitt trigger and in code to help avoid sensor noise affecting results. This weeks lab had us drive to a trash can by following a line and stop a certain distance away from it.

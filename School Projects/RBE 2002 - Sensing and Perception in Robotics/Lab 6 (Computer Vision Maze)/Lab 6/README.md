@@ -1,0 +1,3 @@
+========== Week Six ==========
+
+In week six we had the final lab. We learned how to use an OpenMV camera for AprilTag tracking. The camera would locate the tag and communicate data through I2C, sending x and y position, tag width and height, and tax number. By adding more states to our state machine, we were able to approach, align with, and search for AprilTags. In the lab, we had to drive to designated coordinates where trash cans were placed and aligned with them using the camera. Then it would be picked up to be weighed with the load cell, and carried to a dropoff point.

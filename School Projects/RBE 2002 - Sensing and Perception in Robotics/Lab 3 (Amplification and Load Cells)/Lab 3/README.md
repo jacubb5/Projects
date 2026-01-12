@@ -1,1 +1,3 @@
-# Project-1-Starter-Code
+========== Week Three ==========
+
+In week three we used a lifting mechanism with a servo and load cell to pick up trash cans and weigh them. Load cells were plugged into an HX711 amplifier, which has a built in ADC that would send data directly to the Romi with I2C. We needed to use documentation to decide on which operation it should use with and how much amplification should be applied. Once again the sensors needed to be calibrated in code. A breadboard was needed to wire the electronics to keep the drive power supply separate from the logic power supply, for the drive motors and servo and sensors respectively. The lab had us accurately measure how many screws of equal mass were inside trash bins.
