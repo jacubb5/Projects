@@ -16,6 +16,10 @@ Last Edited: 1/10/2026
 
 The previous year’s tracking system was large, heavy, and difficult to use. It weighed over 100 pounds, was poorly balanced, overheated under load, and took more than 30 minutes to assemble. Wind loads on a large dish antenna made tracking unstable, and the motors were unable to slew fast enough to keep up with the rocket. Low-quality sensors and poorly tuned control loops made calibration unreliable and caused the closed-loop system to behave inconsistently.
 
+![IREC 2025 Tracker](https://github.com/user-attachments/assets/a17ca0c5-a895-4122-a8f6-7488a81c4580)
+
+Last Year's Tracker
+
 The new system was designed around several core goals: dramatically reducing weight, increasing modularity, improving dynamic performance, and making field deployment fast and reliable. A major architectural change was moving from a large parabolic dish to lightweight Yagi antennas, which significantly reduce wind loading while still providing high directional gain. The entire system also needed to be portable, quickly assembled by a single person, and capable of tracking the rocket with sufficient speed and precision.
 
 Simulations were run to estimate the maximum angular velocity and acceleration required to follow the rocket’s trajectory. These values were used to set motor and gearbox requirements with a large factor of safety to ensure the tracker could handle worst-case conditions.
@@ -25,6 +29,14 @@ Simulations were run to estimate the maximum angular velocity and acceleration r
 Rather than iterating on last year’s large turntable design, the new tracker was designed as a compact, modular gimbal built around lightweight components. A speaker tripod was selected as the base because it provides high load capacity with excellent portability. The azimuth and elevation axes were redesigned to be both lighter and easier to disassemble for transport.
 
 The system uses dovetail interfaces and quick-latch clamps so that major subassemblies can be attached or removed without tools. This allows the tracker to be deployed in minutes rather than tens of minutes. The antennas are mounted so their center of mass is aligned with the rotation axes, minimizing required motor torque and improving dynamic response.
+
+![Dovetail Initial Prototype Open](https://github.com/user-attachments/assets/8dacef8e-86b8-4faf-a0fd-372eac6e38c8)
+
+Initial Dovetail Prototype (Open)
+
+![Dovetail Initial Prototype Closed](https://github.com/user-attachments/assets/0ce2be4a-9e20-466d-b443-ee3bdb6456e3)
+
+Initial Dovetail Prototype (Closed)
 
 A worm gear is used on the elevation axis so that wind loads cannot back-drive the motors. This prevents the antennas from being pushed off target and allows the motors to hold position without constantly applying torque. The azimuth axis is driven through a gear reduction directly rather than through a large rotating platform, reducing mass and mechanical complexity. A lazy Susan bearing is used to smooth azimuth motion while the gearbox provides stiffness and structural support.
 
@@ -36,6 +48,10 @@ Like the previous system, this design uses stepper motors, but with a critical i
 
 This approach provides several advantages. It prevents missed steps, improves dynamic response, and allows much tighter control of position and velocity. It also removes sensitivity to temperature drift and electrical noise that affected the previous year’s sensors. These changes allow the gimbal to behave like a true servo system while still using stepper motors for their torque and simplicity.
 
+![StepperOnline Closed-Loop Stepper Motor](https://github.com/user-attachments/assets/00fea90d-e8ac-4fc2-b6ae-a7d574ab090a)
+
+StepperOnline Closed-Loop Stepper Motor
+
 ========== CAD, Integration, and Design Reviews ==========
 
 The full system was designed in Onshape, which is used across the club to allow different subteams to collaborate on shared hardware. I worked directly with the antenna team to design a compatible mounting interface and ensure that both mechanical and electromagnetic constraints were respected. In particular, several structural parts had to avoid metal near the antennas to prevent interference.
@@ -43,6 +59,20 @@ The full system was designed in Onshape, which is used across the club to allow 
 The CAD assembly includes stepper motors, gearboxes, electronics, batteries, tripod, structural elements, and all custom parts. I designed several custom components, including the dovetail mounts, battery holder, and the tripod interface bracket. These parts were modeled with tolerances suitable for 3D printing in polycarbonate for high strength and temperature resistance.
 
 The design was presented at Preliminary Design Review (PDR) and Critical Design Review (CDR) to the HPRC board. Most feedback focused on cost and procurement, and no major architectural changes were required after CDR.
+
+
+
+<img width="2547" height="3296" alt="Full Tracker Assembly" src="https://github.com/user-attachments/assets/9844e131-f4d8-4420-8c03-5c07f7395cfd" />
+
+Full Tracker Assembly
+
+<img width="2547" height="3296" alt="Tracker Electronics Assembly (3-4 View)" src="https://github.com/user-attachments/assets/4deb64e4-dd14-4812-b5ff-95e077997ede" />
+
+Tracker Electronics Assembly (3/4 View)
+
+<img width="2547" height="3296" alt="Final Assembly 3 Inverted" src="https://github.com/user-attachments/assets/dea8418d-e195-4b67-9087-894e6e058f00" />
+
+Tracker Electronics Assembly (Side View)
 
 ========== Current Status and Expected Results ==========
 
