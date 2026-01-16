@@ -72,3 +72,49 @@ Finally, the project taught me how to manage iteration under real constraints. T
 ========== Summary ==========
 
 This project was more than a guitar pedal build. It was a complete hardware development cycle involving electrical design, manufacturing, mechanical integration, debugging, and iteration under time constraints. The experience directly improved my confidence and competence in designing, building, and troubleshooting real-world electronic systems, and it closely reflects the type of multidisciplinary problem solving required in robotics engineering.
+
+========== Photo Gallery ==========
+
+http://www.geofex.com/article_folders/fuzzface/fftech2.gif
+
+Fuzz Face With "Jimi Hendrix" Mods Schematic
+
+![KiCad Schematic](https://github.com/user-attachments/assets/5ad7ec8e-e523-4adb-b9e9-08c11013ec11)
+
+Schematic Recreated in KiCad
+
+![KiCad PCB](https://github.com/user-attachments/assets/dce4636f-f6d3-4af9-a6d9-e0dd31872781)
+
+PCB Designed in KiCad
+
+![KiCad PCB Render](https://github.com/user-attachments/assets/6ac416dd-c4a2-4abe-80ed-25dcbc2629c0)
+
+PCB Rendered in KiCad
+
+![Digikey Bill of Materials](https://github.com/user-attachments/assets/0be3bde5-d20b-42d1-acf1-83218fa34fae)
+
+Digikey Bill of Materials
+
+![Circuit Testing with Breadboard](https://github.com/user-attachments/assets/5d4d9327-b7f0-4265-9d5b-48de991fc231)
+
+Circuit Testing with Breadboard
+
+![Final Protoboard Circuit](https://github.com/user-attachments/assets/8a9ffa83-84ed-4576-8e61-a149839008fd)
+
+Final Protoboard Circuit
+
+<img width="2270" height="2270" alt="Pedal Assembly" src="https://github.com/user-attachments/assets/8d9f062a-1187-48a7-88dd-3c48c04fb6df" />
+
+Pedal Assembly in Onshape
+
+![Assembled Case with Primer](https://github.com/user-attachments/assets/0a21c66f-bb29-40f9-907f-ed5ab8df3f43)
+
+3D Printed Enclosure with Primer
+
+![Assembled Case Fully Painted (Top View)](https://github.com/user-attachments/assets/8316b0ad-014e-428b-ab6d-f0b6821aa39b)
+
+3D Printed Enclosure Fully Painted (Top View)
+
+![Assembled Case Full Painted (Rear View)](https://github.com/user-attachments/assets/07b7c088-f536-4efa-a891-881bfd4a7c12)
+
+3D Printed Enclosure Fully Painted (Rear View)
