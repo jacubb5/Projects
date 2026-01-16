@@ -18,6 +18,14 @@ At the start of the project, I researched whether building a Fuzz Face pedal was
 
 Using these resources, I selected the “Fuzz Face with Roger Mayer / Jimi Hendrix mods” schematic as a starting point and recreated it in KiCad to familiarize myself with the circuit and prepare for PCB layout. While comparing multiple schematics, I noticed inconsistencies in component orientation and transistor polarity. Rather than copying a single design, I spent time understanding why these differences existed, which became important later when adapting the circuit.
 
+![Fuzz Face with Jimi Hendrix Mods Schematic](https://github.com/user-attachments/assets/18c909fd-744a-4773-b0f4-f7101deb6e04)
+
+Fuzz Face With "Jimi Hendrix" Mods Schematic
+
+![KiCad Schematic](https://github.com/user-attachments/assets/5ad7ec8e-e523-4adb-b9e9-08c11013ec11)
+
+Schematic Recreated in KiCad
+
 ========== Transistor Selection and Circuit Adaptation ==========
 
 One of the most important discoveries during this project was how critical transistor gain (hFE) is to the sound of a Fuzz Face pedal. The target gains were approximately 90 hFE for the first transistor and 140 hFE for the second. Original Hendrix pedals used PNP germanium transistors, which are expensive, difficult to source consistently, and often sold individually after being manually tested.
@@ -32,6 +40,18 @@ The PCB was designed in KiCad with an emphasis on compactness. I initially plann
 
 The board used surface-mount components with hand-solderable footprints. Parts were sourced primarily from Digi-Key, and the PCB was fabricated by JLCPCB. Several design iterations were required due to footprint mismatches and underestimated component sizes, which reinforced the importance of selecting exact parts before committing to a layout.
 
+![KiCad PCB](https://github.com/user-attachments/assets/dce4636f-f6d3-4af9-a6d9-e0dd31872781)
+
+PCB Designed in KiCad
+
+![KiCad PCB Render](https://github.com/user-attachments/assets/6ac416dd-c4a2-4abe-80ed-25dcbc2629c0)
+
+PCB Rendered in KiCad
+
+![Digikey Bill of Materials](https://github.com/user-attachments/assets/0be3bde5-d20b-42d1-acf1-83218fa34fae)
+
+Digikey Bill of Materials
+
 ========== Assembly and Early Testing ==========
 
 Before leaving campus for winter break, I soldered all PCB components using lab equipment. Due to time constraints, I did not fully test the circuit before leaving, which later became a major lesson learned. At the time, visual inspection suggested the board was assembled correctly, but this proved to be unreliable without proper electrical verification.
@@ -42,18 +62,42 @@ Once home for winter break, I tested the pedal with an electric guitar and ampli
 
 In parallel, I designed a custom enclosure modeled after a Fuzz Face Mini pedal. Due to limited published dimensions, I worked from reference images and estimated measurements. I imported manufacturer models of the jacks and potentiometers to verify fit, printed the enclosure in PLA, and finished it with primer and paint to match the appearance of classic pedals.
 
+<img width="2270" height="2270" alt="Pedal Assembly" src="https://github.com/user-attachments/assets/8d9f062a-1187-48a7-88dd-3c48c04fb6df" />
+
+Pedal Assembly in Onshape
+
+![Assembled Case with Primer](https://github.com/user-attachments/assets/0a21c66f-bb29-40f9-907f-ed5ab8df3f43)
+
+3D Printed Enclosure with Primer
+
 Despite extensive debugging, it became unclear whether the remaining issues were caused by individual components, soldering quality, or the PCB design itself. To isolate the problem, I rebuilt the circuit using through-hole components on a breadboard. The circuit worked immediately, confirming that the schematic was correct and that the issues were related to implementation rather than design.
+
+![Circuit Testing with Breadboard](https://github.com/user-attachments/assets/5d4d9327-b7f0-4265-9d5b-48de991fc231)
+
+Circuit Testing with Breadboard
 
 ========== Final Implementation and Testing ==========
 
 After validating the circuit on a breadboard, I transferred the design to a protoboard that could fit inside the enclosure. I carefully recreated the circuit, checked continuity and resistance across all connections, and resolved several soldering issues. Once completed, the circuit was significantly more stable than the breadboard version and produced consistent output without noise when components were moved.
 I performed extended testing using a guitar and amplifier, verifying the behavior of the volume, fuzz, and custom modification potentiometer. The final assembly was then completed and prepared for gifting.
 
+![Final Protoboard Circuit](https://github.com/user-attachments/assets/8a9ffa83-84ed-4576-8e61-a149839008fd)
+
+Final Protoboard Circuit
+
 ========== Results ==========
 
 A commercially available Fuzz Face pedal costs approximately $180, while this build cost around $75. The cost was higher than necessary due to replacement parts and redesigns, but those expenses were a direct result of learning through iteration. With the experience gained from this project, I am confident that I could recreate a similar pedal more efficiently and at a lower cost.
 
 The final sound closely matched the classic Hendrix-style fuzz I was aiming for. The added modification control provided additional tonal flexibility, giving the pedal a distinct character beyond the original design. The enclosure fit well, and the overall build quality exceeded my initial expectations. Most importantly, my father was very happy with the final result.
+
+![Assembled Case Fully Painted (Top View)](https://github.com/user-attachments/assets/8316b0ad-014e-428b-ab6d-f0b6821aa39b)
+
+3D Printed Enclosure Fully Painted (Top View)
+
+![Assembled Case Full Painted (Rear View)](https://github.com/user-attachments/assets/07b7c088-f536-4efa-a891-881bfd4a7c12)
+
+3D Printed Enclosure Fully Painted (Rear View)
 
 ========== Engineering Takeaways ==========
 
@@ -72,49 +116,3 @@ Finally, the project taught me how to manage iteration under real constraints. T
 ========== Summary ==========
 
 This project was more than a guitar pedal build. It was a complete hardware development cycle involving electrical design, manufacturing, mechanical integration, debugging, and iteration under time constraints. The experience directly improved my confidence and competence in designing, building, and troubleshooting real-world electronic systems, and it closely reflects the type of multidisciplinary problem solving required in robotics engineering.
-
-========== Photo Gallery ==========
-
-http://www.geofex.com/article_folders/fuzzface/fftech2.gif
-
-Fuzz Face With "Jimi Hendrix" Mods Schematic
-
-![KiCad Schematic](https://github.com/user-attachments/assets/5ad7ec8e-e523-4adb-b9e9-08c11013ec11)
-
-Schematic Recreated in KiCad
-
-![KiCad PCB](https://github.com/user-attachments/assets/dce4636f-f6d3-4af9-a6d9-e0dd31872781)
-
-PCB Designed in KiCad
-
-![KiCad PCB Render](https://github.com/user-attachments/assets/6ac416dd-c4a2-4abe-80ed-25dcbc2629c0)
-
-PCB Rendered in KiCad
-
-![Digikey Bill of Materials](https://github.com/user-attachments/assets/0be3bde5-d20b-42d1-acf1-83218fa34fae)
-
-Digikey Bill of Materials
-
-![Circuit Testing with Breadboard](https://github.com/user-attachments/assets/5d4d9327-b7f0-4265-9d5b-48de991fc231)
-
-Circuit Testing with Breadboard
-
-![Final Protoboard Circuit](https://github.com/user-attachments/assets/8a9ffa83-84ed-4576-8e61-a149839008fd)
-
-Final Protoboard Circuit
-
-<img width="2270" height="2270" alt="Pedal Assembly" src="https://github.com/user-attachments/assets/8d9f062a-1187-48a7-88dd-3c48c04fb6df" />
-
-Pedal Assembly in Onshape
-
-![Assembled Case with Primer](https://github.com/user-attachments/assets/0a21c66f-bb29-40f9-907f-ed5ab8df3f43)
-
-3D Printed Enclosure with Primer
-
-![Assembled Case Fully Painted (Top View)](https://github.com/user-attachments/assets/8316b0ad-014e-428b-ab6d-f0b6821aa39b)
-
-3D Printed Enclosure Fully Painted (Top View)
-
-![Assembled Case Full Painted (Rear View)](https://github.com/user-attachments/assets/07b7c088-f536-4efa-a891-881bfd4a7c12)
-
-3D Printed Enclosure Fully Painted (Rear View)
